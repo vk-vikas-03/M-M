@@ -1,0 +1,8 @@
+// PROGRAM 17. To rotate DC in clockwise direction.
+// NAME: VIKAS VISHWAKARMA
+// ENROLL NO.: 21SDSCE01110
+
+ORG 0000H
+	SETB P3.0
+	CLR P3.1
+	END

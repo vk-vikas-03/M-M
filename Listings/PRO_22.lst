@@ -1,0 +1,121 @@
+A51 MACRO ASSEMBLER  PRO_22                                                               03/22/2023 09:37:10 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\PRO_22.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE PRO_22.a51 SET(SMALL) DEBUG PRINT(.\Listings\PRO_22.lst) OBJECT(.\Objec
+                      ts\PRO_22.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+                       4     
+0000                   5     org 0000h
+0000 759038            6             START:mov p1,#38h;16*2 lcd & 5*7 matrix
+0003 119E              7             acall cmd
+0005 75900F            8             mov p1,#0fh;lcd on cursor blink
+0008 119E              9             acall cmd
+000A 759006           10             mov p1,#06h;left to right shift
+000D 119E             11             acall cmd
+000F 759001           12             mov p1,#01h;clrscr
+0012 119E             13             acall cmd
+0014 759080           14             mov p1,#80h;f_line
+0017 119E             15             acall cmd
+0019 11B0             16             ACALL DELAY
+                      17     
+001B 11A7             18             acall data1
+001D 759020           19             mov p1,#' '
+0020 11A7             20             acall data1
+0022 759020           21             mov p1,#' '
+0025 11A7             22             acall data1
+0027 759020           23             mov p1,#' '
+002A 11A7             24             acall data1
+002C 759020           25             mov p1,#' '
+002F 11A7             26             acall data1
+0031 759020           27             mov p1,#' '
+0034 11A7             28             acall data1
+0036 759044           29             mov p1,#'D'
+0039 11A7             30             acall data1
+003B 759045           31             mov p1,#'E'
+003E 11A7             32             acall data1
+0040 759045           33             mov p1,#'E'
+0043 11A7             34             acall data1
+0045 759050           35             mov p1,#'P'
+0048 11A7             36             acall data1
+004A 759020           37             mov p1,#' '
+004D 11A7             38             acall data1
+                      39     
+004F 7590C0           40             mov p1,#0C0h;l_line
+0052 119E             41             acall cmd
+0054 11B0             42             ACALL DELAY
+0056 759020           43             mov p1,#' '
+0059 11A7             44             acall data1
+005B 759020           45             mov p1,#' '
+005E 11A7             46             acall data1
+0060 759020           47             mov p1,#' '
+0063 11A7             48             acall data1
+0065 759020           49             mov p1,#' '
+0068 11A7             50             acall data1
+006A 759020           51             mov p1,#' '
+006D 11A7             52             acall data1
+006F 759041           53             mov p1,#'A'
+0072 11A7             54             acall data1
+0074 759047           55             mov p1,#'G'
+0077 11A7             56             acall data1
+0079 759048           57             mov p1,#'H'
+A51 MACRO ASSEMBLER  PRO_22                                                               03/22/2023 09:37:10 PAGE     2
+
+007C 11A7             58             acall data1
+007E 759045           59             mov p1,#'E'
+0081 11A7             60             acall data1
+0083 759052           61             mov p1,#'R'
+0086 11A7             62             acall data1
+0088 759041           63             mov p1,#'A'
+008B 11A7             64             acall data1
+008D 759020           65             mov p1,#' '
+0090 11A7             66             acall data1
+0092 759020           67             mov p1,#' '
+0095 11A7             68             acall data1
+0097 759020           69             mov p1,#' '
+009A 11A7             70             acall data1     
+009C 0100             71             JMP START
+                      72             
+009E C2B0             73             cmd:clr p3.0
+                      74             ;CLr p3.1
+00A0 D2B2             75             setb p3.2
+00A2 C2B2             76             clr p3.2
+00A4 11B0             77             acall delay
+00A6 22               78             ret
+00A7 D2B0             79             data1:setb p3.0
+                      80             ;clr p3.1
+00A9 D2B2             81             setb p3.2
+00AB C2B2             82             clr p3.2
+00AD 11B0             83             acall delay
+00AF 22               84             ret
+00B0 79FF             85             delay:mov r1,#0ffh
+00B2 D9FE             86             here:djnz r1,here
+00B4 22               87             ret
+                      88             end
+A51 MACRO ASSEMBLER  PRO_22                                                               03/22/2023 09:37:10 PAGE     3
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+CMD. . . . . . . .  C ADDR   009EH   A   
+DATA1. . . . . . .  C ADDR   00A7H   A   
+DELAY. . . . . . .  C ADDR   00B0H   A   
+HERE . . . . . . .  C ADDR   00B2H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+P3 . . . . . . . .  D ADDR   00B0H   A   
+START. . . . . . .  C ADDR   0000H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

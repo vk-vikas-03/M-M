@@ -1,0 +1,94 @@
+A51 MACRO ASSEMBLER  PRO_21                                                               03/22/2023 09:22:05 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\PRO_21.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE PRO_21.a51 SET(SMALL) DEBUG PRINT(.\Listings\PRO_21.lst) OBJECT(.\Objec
+                      ts\PRO_21.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+                       4     
+                       5     
+0000                   6     org 0000h
+0000 759038            7             START:mov p1,#38h;16*2 lcd & 5*7 matrix
+0003 115E              8             acall cmd
+0005 75900F            9             mov p1,#0fh;lcd on cursor blink
+0008 115E             10             acall cmd
+000A 759006           11             mov p1,#06h;left to right shift
+000D 115E             12             acall cmd
+000F 759001           13             mov p1,#01h;clrscr
+0012 115E             14             acall cmd
+0014 759080           15             mov p1,#80h;f_line
+0017 115E             16             acall cmd
+0019 1170             17             ACALL DELAY
+                      18             
+001B 759052           19             mov p1,#'R'
+001E 1167             20             acall data1
+0020 75904B           21             mov p1,#'K'
+0023 1167             22             acall data1
+0025 759020           23             mov p1,#' '
+0028 1167             24             acall data1
+002A 759055           25             mov p1,#'U'
+002D 1167             26             acall data1
+002F 75904E           27             mov p1,#'N'
+0032 1167             28             acall data1
+0034 759049           29             mov p1,#'I'
+0037 1167             30             acall data1
+0039 759056           31             mov p1,#'V'
+003C 1167             32             acall data1
+003E 759045           33             mov p1,#'E'
+0041 1167             34             acall data1
+0043 759052           35             mov p1,#'R'
+0046 1167             36             acall data1
+0048 759053           37             mov p1,#'S'
+004B 1167             38             acall data1
+004D 759049           39             mov p1,#'I'
+0050 1167             40             acall data1
+0052 759054           41             mov p1,#'T'
+0055 1167             42             acall data1
+0057 759059           43             mov p1,#'Y'
+005A 1167             44             acall data1
+005C 80A2             45             JMP START
+005E C2B0             46             cmd:clr p3.0
+                      47             ;CLr p3.1
+0060 D2B2             48             setb p3.2
+0062 C2B2             49             clr p3.2
+0064 1170             50             acall delay
+0066 22               51             ret     
+0067 D2B0             52             data1:setb p3.0
+                      53             ;clr p3.1
+0069 D2B2             54             setb p3.2
+006B C2B2             55             clr p3.2
+006D 1170             56             acall delay
+006F 22               57             ret
+A51 MACRO ASSEMBLER  PRO_21                                                               03/22/2023 09:22:05 PAGE     2
+
+0070 79FF             58             delay:mov r1,#0ffh
+0072 D9FE             59             here:djnz r1,here
+0074 22               60             ret
+                      61             end
+A51 MACRO ASSEMBLER  PRO_21                                                               03/22/2023 09:22:05 PAGE     3
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+CMD. . . . . . . .  C ADDR   005EH   A   
+DATA1. . . . . . .  C ADDR   0067H   A   
+DELAY. . . . . . .  C ADDR   0070H   A   
+HERE . . . . . . .  C ADDR   0072H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+P3 . . . . . . . .  D ADDR   00B0H   A   
+START. . . . . . .  C ADDR   0000H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

@@ -1,0 +1,39 @@
+A51 MACRO ASSEMBLER  PRO_9                                                                03/28/2023 20:03:46 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\PRO_9.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE PRO_9.a51 SET(SMALL) DEBUG PRINT(.\Listings\PRO_9.lst) OBJECT(.\Objects
+                      \PRO_9.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+0000                   4     org 0000h
+0000 C3                5             clr c 
+0001 7412              6             mov a,#12h
+0003 75F005            7             mov b,#05h
+0006 95F0              8             subb a,b
+0008 F510              9             mov 10h,a
+000A 7412             10             mov a,#12h
+000C 75F005           11             mov b,#05h
+000F 95F0             12             subb a,b        
+0011 F511             13             mov 11h,a
+                      14     end
+A51 MACRO ASSEMBLER  PRO_9                                                                03/28/2023 20:03:46 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

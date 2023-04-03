@@ -1,0 +1,68 @@
+A51 MACRO ASSEMBLER  PRO_15                                                               02/10/2023 08:56:34 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\PRO_15.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE PRO_15.a51 SET(SMALL) DEBUG PRINT(.\Listings\PRO_15.lst) OBJECT(.\Objec
+                      ts\PRO_15.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+0000                   4     org 0000h
+0000 7590C0            5             start:mov p1,#0c0h
+0003 1134              6             acall delay
+0005 7590F9            7             mov p1,#0f9h
+0008 1134              8             acall delay
+000A 7590A4            9             mov p1,#0a4h
+000D 1134             10             acall delay
+000F 7590B0           11             mov p1,#0b0h
+0012 1134             12             acall delay
+0014 759099           13             mov p1,#99h
+0017 1134             14             acall delay
+0019 759092           15             mov p1,#092h
+001C 1134             16             acall delay
+001E 759082           17             mov p1,#082h
+0021 1134             18             acall delay
+0023 7590F8           19             mov p1,#0f8h
+0026 1134             20             acall delay
+0028 759080           21             mov p1,#080h
+002B 1134             22             acall delay
+002D 759090           23             mov p1,#90h
+0030 1134             24             acall delay
+0032 80CC             25             jmp start
+0034                  26             delay:  
+0034 758901           27             MOV TMOD,#01H
+0037 758CFC           28             MOV TH0,#0FCH
+003A 758A18           29             MOV TL0,#18H
+003D D28C             30             SETB TR0
+003F 308DFD           31             HERE: JNB TF0,HERE
+0042 C28D             32             CLR TF0
+0044 C28C             33             CLR TR0
+0046 22               34             ret
+                      35             END
+A51 MACRO ASSEMBLER  PRO_15                                                               02/10/2023 08:56:34 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DELAY. . . . . . .  C ADDR   0034H   A   
+HERE . . . . . . .  C ADDR   003FH   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+START. . . . . . .  C ADDR   0000H   A   
+TF0. . . . . . . .  B ADDR   0088H.5 A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TL0. . . . . . . .  D ADDR   008AH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

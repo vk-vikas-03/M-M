@@ -1,0 +1,42 @@
+A51 MACRO ASSEMBLER  PRO_11                                                               03/28/2023 20:09:18 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\PRO_11.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE PRO_11.a51 SET(SMALL) DEBUG PRINT(.\Listings\PRO_11.lst) OBJECT(.\Objec
+                      ts\PRO_11.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+                       4     
+0000                   5     ORG 0000H
+0000 754007            6             MOV 40H,#7
+0003 754108            7             MOV 41H,#8
+0006 754209            8             MOV 42H,#9
+0009 7A0A              9             MOV R2,#10
+000B 7840             10             MOV R0,#40H
+000D 7950             11             MOV R1,#50H
+000F E6               12             GO:MOV A,@R0
+0010 F7               13                     MOV @R1,A
+0011 08               14                     INC R0
+0012 09               15                     INC R1
+0013 DAFA             16                     DJNZ R2,GO
+                      17             END
+A51 MACRO ASSEMBLER  PRO_11                                                               03/28/2023 20:09:18 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+GO . . . . . . . .  C ADDR   000FH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

@@ -1,0 +1,15 @@
+// PROGRAM 19.To turn on LED0 if switch 0 is press and turn on LED1 if switch 1 is press.
+// NAME: VIKAS VISHWAKARMA
+// ENROLL NO.: 21SDSCE01110
+ORG 0000H
+	START:JB P2.0,GO
+	CLR P1.0
+	GO:JNB P2.0,GO1
+	SETB P1.0
+
+	GO1:JB P2.1,GO2
+	CLR P1.1
+	GO2:JNB P2.1,GO3
+	SETB P1.1
+	GO3:JMP START
+END

@@ -1,0 +1,64 @@
+A51 MACRO ASSEMBLER  PRO_2                                                                03/28/2023 19:38:02 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\PRO_2.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE PRO_2.a51 SET(SMALL) DEBUG PRINT(.\Listings\PRO_2.lst) OBJECT(.\Objects
+                      \PRO_2.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+0000                   4     org 0000h
+0000                   5             start:
+0000 759080            6             mov p1,#10000000b
+0003 1116              7             acall a1
+0005 759040            8             mov p1,#01000000b
+0008 1116              9             acall a1
+000A 759020           10             mov p1,#00100000b
+000D 1116             11             acall a1
+000F 759010           12             mov p1,#00010000b
+0012 1116             13             acall a1
+0014 80EA             14             jmp start 
+0016 7A02             15             a1: mov r2,#2
+0018 79FF             16             here2: mov r1,#255
+001A 78FF             17             here1: mov r0,#255
+001C D8FE             18             here:djnz r0,here
+001E D9FA             19             djnz r1,here1
+0020 DAF6             20             djnz r2,here2
+0022 22               21             ret
+                      22             end
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+A51 MACRO ASSEMBLER  PRO_2                                                                03/28/2023 19:38:02 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+A1 . . . . . . . .  C ADDR   0016H   A   
+HERE . . . . . . .  C ADDR   001CH   A   
+HERE1. . . . . . .  C ADDR   001AH   A   
+HERE2. . . . . . .  C ADDR   0018H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+START. . . . . . .  C ADDR   0000H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

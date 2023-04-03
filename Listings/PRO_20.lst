@@ -1,0 +1,51 @@
+A51 MACRO ASSEMBLER  PRO_20                                                               03/20/2023 09:23:46 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\PRO_20.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE PRO_20.a51 SET(SMALL) DEBUG PRINT(.\Listings\PRO_20.lst) OBJECT(.\Objec
+                      ts\PRO_20.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+                       4     
+                       5     
+                       6     
+                       7     
+                       8     
+0000                   9     org 0000h
+0000 20A0FD           10     start:Jb p2.0, start
+0003 7590C0           11     mov p1, #0c0h
+0006 20A1FD           12     start2:jb p2.1, start2
+0009 7590F9           13     mov p1, #0f9h
+000C 20A2FD           14     start3:jb p2.2, start3
+000F 7590A4           15     mov p1, #0a4h
+0012 20A3FD           16     start4:jb p2.3, start4
+0015 7590B0           17     mov p1, #0b0h
+0018 20A4FD           18     start5:jb p2.4, start5
+001B 759099           19     mov p1, #99h
+                      20     end
+A51 MACRO ASSEMBLER  PRO_20                                                               03/20/2023 09:23:46 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+P1 . . . . . . . .  D ADDR   0090H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+START. . . . . . .  C ADDR   0000H   A   
+START2 . . . . . .  C ADDR   0006H   A   
+START3 . . . . . .  C ADDR   000CH   A   
+START4 . . . . . .  C ADDR   0012H   A   
+START5 . . . . . .  C ADDR   0018H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

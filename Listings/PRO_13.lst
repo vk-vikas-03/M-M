@@ -1,0 +1,46 @@
+A51 MACRO ASSEMBLER  PRO_13                                                               02/10/2023 08:53:03 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\PRO_13.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE PRO_13.a51 SET(SMALL) DEBUG PRINT(.\Listings\PRO_13.lst) OBJECT(.\Objec
+                      ts\PRO_13.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+0000                   4     ORG 0000H
+0000 B291              5             START:CPL P1.1
+0002 758910            6             MOV TMOD,#10H
+0005 758DD8            7             MOV TH1,#0D8H
+0008 758BF0            8             MOV TL1,#0F0H
+000B D28E              9             SETB TR1
+000D 308FFD           10             HERE:JNB TF1,HERE
+0010 C28F             11             CLR TF1
+0012 C28E             12             CLR TR1
+0014 80EA             13             JMP START
+                      14             END
+A51 MACRO ASSEMBLER  PRO_13                                                               02/10/2023 08:53:03 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+HERE . . . . . . .  C ADDR   000DH   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+START. . . . . . .  C ADDR   0000H   A   
+TF1. . . . . . . .  B ADDR   0088H.7 A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TL1. . . . . . . .  D ADDR   008BH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

@@ -1,0 +1,46 @@
+A51 MACRO ASSEMBLER  PRO_19                                                               02/10/2023 09:03:03 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\PRO_19.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE PRO_19.a51 SET(SMALL) DEBUG PRINT(.\Listings\PRO_19.lst) OBJECT(.\Objec
+                      ts\PRO_19.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+0000                   4     ORG 0000H
+0000 20A002            5             START:JB P2.0,GO
+0003 C290              6             CLR P1.0
+0005 30A002            7             GO:JNB P2.0,GO1
+0008 D290              8             SETB P1.0
+                       9     
+000A 20A102           10             GO1:JB P2.1,GO2
+000D C291             11             CLR P1.1
+000F 30A102           12             GO2:JNB P2.1,GO3
+0012 D291             13             SETB P1.1
+0014 80EA             14             GO3:JMP START
+                      15     END
+A51 MACRO ASSEMBLER  PRO_19                                                               02/10/2023 09:03:03 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+GO . . . . . . . .  C ADDR   0005H   A   
+GO1. . . . . . . .  C ADDR   000AH   A   
+GO2. . . . . . . .  C ADDR   000FH   A   
+GO3. . . . . . . .  C ADDR   0014H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+START. . . . . . .  C ADDR   0000H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

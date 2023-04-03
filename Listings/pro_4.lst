@@ -1,0 +1,32 @@
+A51 MACRO ASSEMBLER  PRO_4                                                                03/28/2023 19:45:34 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\PRO_4.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE PRO_4.a51 SET(SMALL) DEBUG PRINT(.\Listings\PRO_4.lst) OBJECT(.\Objects
+                      \PRO_4.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+0000                   4     org 0000h
+0000 75503C            5             mov 50h,#60
+0003 855040            6             mov 40h,50h
+                       7     end
+                                     
+A51 MACRO ASSEMBLER  PRO_4                                                                03/28/2023 19:45:34 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

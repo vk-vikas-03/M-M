@@ -1,0 +1,8 @@
+// PROGRAM—1. TO BLINK LEDS
+// NAME: VIKAS VISHWAKARMA 
+// ENROLL NO.: 21SDSCE01110
+Org 0000h
+	Start:mov p1,#00h
+Mov p1,#0ffh
+Jmp start
+end

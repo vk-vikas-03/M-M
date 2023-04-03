@@ -1,0 +1,58 @@
+A51 MACRO ASSEMBLER  PRO_3                                                                03/28/2023 19:45:34 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\PRO_3.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE PRO_3.a51 SET(SMALL) DEBUG PRINT(.\Listings\PRO_3.lst) OBJECT(.\Objects
+                      \PRO_3.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+                       4     
+0000                   5     org 0000h
+0000 780A              6     mov r0,#10
+                       7     
+0002 28                8     here:add a,r0
+0003 D4                9     da a
+0004 D8FC             10     djnz r0,here
+0006 F9               11     mov r1,a
+                      12     end
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+A51 MACRO ASSEMBLER  PRO_3                                                                03/28/2023 19:45:34 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+HERE . . . . . . .  C ADDR   0002H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

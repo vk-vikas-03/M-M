@@ -1,0 +1,38 @@
+A51 MACRO ASSEMBLER  PRO_8                                                                03/28/2023 19:58:00 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\PRO_8.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE PRO_8.a51 SET(SMALL) DEBUG PRINT(.\Listings\PRO_8.lst) OBJECT(.\Objects
+                      \PRO_8.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+0000                   4     org 0000h
+0000 7434              5             mov a,#34h
+0002 75F045            6             mov b,#45h
+0005 25F0              7             add a,b
+0007 F510              8             mov 10h,a
+0009 7456              9             mov a,#56h
+000B 75F023           10             mov b,#23h
+000E 35F0             11             addc a,b        
+0010 F511             12             mov 11h,a
+                      13     end
+A51 MACRO ASSEMBLER  PRO_8                                                                03/28/2023 19:58:00 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
